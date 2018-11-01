@@ -38,6 +38,7 @@
   	<zkclient-version>0.1</zkclient-version>
   	<ehcache-version>2.10.4</ehcache-version>
   	<redis-version>2.9.0</redis-version>
+  	<activemq-version>5.15.2</activemq-version>
   </properties>
   
   <dependencyManagement>
@@ -312,7 +313,13 @@
 		    <artifactId>jedis</artifactId>
 		    <version>${redis-version}</version>
 		</dependency>
-				
+		
+		<!-- activemq -->
+		<dependency>
+		    <groupId>org.apache.activemq</groupId>
+		    <artifactId>activemq-all</artifactId>
+		    <version>${activemq-version}</version>
+		</dependency>		
 		
   	</dependencies>
   </dependencyManagement>
